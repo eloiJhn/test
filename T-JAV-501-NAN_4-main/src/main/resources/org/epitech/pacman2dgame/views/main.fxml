@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<VBox xmlns:fx="http://javafx.com/fxml" style="-fx-background-color: black; -fx-padding: 10;" alignment="CENTER" spacing="10" fx:controller="org.epitech.pacman2dgame.Controller.MainController" fx:id="vBox">
+    <ImageView fitWidth="300" preserveRatio="true">
+        <image>
+            <Image url="@../images/pacman_logo.png" />
+        </image>
+    </ImageView>
+
+    <Label fx:id="scoreLabel" style="-fx-text-fill: white;-fx-font-size: 20px"/>
+
+    <Button text="Start a new game" onAction="#switchToInterface" fx:id="play" VBox.vgrow="NEVER"/>
+    <Button text="Settings" onAction="#switchToSettings" fx:id="settings" VBox.vgrow="NEVER"/>
+</VBox>

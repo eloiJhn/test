@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<VBox xmlns:fx="http://javafx.com/fxml" style="-fx-background-color: black;" alignment="CENTER" spacing="10" fx:controller="org.epitech.pacman2dgame.Controller.SettingsController" fx:id="vBox">
+    <ImageView fitWidth="300" preserveRatio="true">
+        <image>
+            <Image url="@../images/pacman_logo.png" />
+        </image>
+    </ImageView>
+
+    <GridPane xmlns:fx="http://javafx.com/fxml" alignment="CENTER" hgap="10" vgap="10" fx:id="gridPane">
+        <Label text="Your username" style="-fx-text-fill: white;-fx-font-size: 12px" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField fx:id="username" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    </GridPane>
+    <GridPane xmlns:fx="http://javafx.com/fxml" alignment="CENTER" hgap="10" vgap="10">
+        <Button text="Save" onAction="#save" fx:id="save" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <Button text="Reset your score" onAction="#resetScore" fx:id="resetScore" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        <Button text="Go to main page" onAction="#switchToMain" fx:id="switchToMain" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    </GridPane>
+</VBox>
